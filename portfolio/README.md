@@ -14,7 +14,7 @@ Open http://localhost:3000.
 ## Make it yours
 
 All content is in **`src/data/portfolio.ts`**: profile, skills, projects, experience, links.
-Everything except the name and email is sample content. Replace it, then search for `your-username` to fix the links.
+Content comes from Rohit's resume. Skill percentages are self-rated estimates, so adjust them. Add repo links to the projects in `projects` (the `link` field) when you have them.
 
 Colours and fonts are CSS variables at the top of `src/app/globals.css`.
 

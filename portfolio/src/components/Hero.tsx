@@ -2,7 +2,7 @@ import { profile } from "@/data/portfolio";
 import Clock from "./Clock";
 
 export default function Hero() {
-  const years = new Date().getFullYear() - profile.careerStartYear;
+  const years = Math.max(1, new Date().getFullYear() - profile.careerStartYear);
   return (
     <section className="hero" id="overview">
       <span className="pill">
@@ -15,7 +15,9 @@ export default function Hero() {
       <ul className="meta">
         <li>
           <b>Cluster age</b>
-          <span>{years} yrs</span>
+          <span>
+            {years} {years === 1 ? "yr" : "yrs"}
+          </span>
         </li>
         <li>
           <b>Region</b>
@@ -30,7 +32,6 @@ export default function Hero() {
           <span>1 / 1 available</span>
         </li>
       </ul>
-      <p className="dim mono note">Sample content: edit src/data/portfolio.ts to make it yours.</p>
     </section>
   );
 }
