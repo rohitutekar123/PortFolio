@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import NodePools from "@/components/NodePools";
 import Pods from "@/components/Pods";
 import Rollout from "@/components/Rollout";
+import Community from "@/components/Community";
 import Events from "@/components/Events";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <NodePools />
         <Pods />
         <Rollout />
+        <Community />
         <Events />
         <footer>apiVersion: portfolio/v1 · kind: Person · built with Next.js and TypeScript</footer>
       </main>

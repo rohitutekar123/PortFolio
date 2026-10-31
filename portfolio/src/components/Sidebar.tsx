@@ -5,6 +5,7 @@ const sections = [
   ["nodes", "node-pools"],
   ["pods", "pods"],
   ["rollout", "rollout"],
+  ["community", "community"],
   ["events", "events"],
 ] as const;
 
